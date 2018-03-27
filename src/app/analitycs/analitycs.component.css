@@ -1,0 +1,65 @@
+.panel_age-copy-7 {
+    min-height: 262px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e7e7ed;
+  }
+
+  .card-header {
+    padding: 2%;
+}
+
+.card-header h3 {
+    width: 50%;
+    min-height: 14px;
+    color: #5c9df5;
+    font-size: 1em;
+    margin: 0px;
+    display: inline-block;
+}
+
+.card-header h4 {
+    width: 100%;
+    min-height: 14px;
+    color: #5c9df5;
+    font-size: 1em;
+    text-align: center;
+}
+
+.card-header p {
+    width: 48%;
+    display: inline-block;
+    text-align: right;
+    min-height: 14px;
+    color: #ACABAB;
+    font-size: 0.7em;
+    margin: 0px;
+}
+
+.card-header p img {
+    margin-left: 5px;
+}
+
+/deep/ .options {
+    padding: 20px;
+    background-color: rgba(191, 191, 191, 0.15);
+    margin-top: 20px;
+}
+/deep/ .option {
+    margin-top: 10px;
+}
+/deep/ .caption {
+    font-size: 18px;
+    font-weight: 500;
+}
+/deep/ .option > span {
+    margin-right: 10px;
+}
+/deep/ .option > .dx-widget {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/deep/ #pie {
+    height: 440px;
+}

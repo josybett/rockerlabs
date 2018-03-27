@@ -1,0 +1,108 @@
+<div class="rl-mainpanel">
+    <div class="rl-pagebody">
+      <div class="row row-sm">
+        <div class="col-lg-12">
+          <div class="panel_age-copy-7">
+            <div class="card">
+              <div class="card-header">
+                <h3>
+                  Speed Zones
+                </h3>
+                <p>
+                  <img src="assets/images/resize.svg">
+                  <img src="assets/images/info-ico.svg">
+                </p>
+              </div>
+              <div class="card-body">
+                  <dx-chart
+                  palette="violet"
+                  [dataSource]="chartLinea">
+                  <dxi-series
+                      *ngFor="let serie of series"
+                      [valueField]="serie.value"
+                      [name]="serie.name">
+                  </dxi-series>
+                  <dxo-common-series-settings #seriesSettings
+                      argumentField="time">
+                  </dxo-common-series-settings>
+                  <dxo-margin [bottom]="20"></dxo-margin>
+                  <dxo-argument-axis
+                      [valueMarginsEnabled]="false"
+                      discreteAxisDivisionMode="crossLabels">
+                      <dxo-grid [visible]="true"></dxo-grid>
+                  </dxo-argument-axis>
+                  <dxo-legend
+                      verticalAlignment="right"
+                      horizontalAlignment="center"
+                      itemTextPosition="bottom">
+                  </dxo-legend>
+                  <dxo-tooltip
+                      [enabled]="true">
+                  </dxo-tooltip>
+              </dx-chart>
+              </div>
+            </div><!-- card -->
+          </div><!-- Panel de la gráfica -->          
+        </div><!-- col-12 -->
+      </div><!-- row -->
+
+      <div class="row row-sm py-xl-4 pd-t-10" style="margin-top: 3%">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="panel_age-copy-7">
+              <div class="card-header">
+                <h3>
+                  Count by zones
+                </h3>
+              </div>
+              <div class="card-body">
+                <dx-chart
+                  id="chart"
+                  [dataSource]="barSource">
+                  <dxi-series
+                      argumentField="zona"
+                      valueField="count"
+                      name="Count"
+                      type="bar"
+                      color="#4a90e2">
+                  </dxi-series>
+                </dx-chart>
+              </div>
+            </div>
+          </div><!-- card -->
+        </div><!-- col-8 -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="panel_age-copy-7">
+              <div class="card-header">
+                <h4>
+                  Count by zones
+                </h4>
+              </div>
+              <div class="card-body">
+                <dx-pie-chart
+                    id="pie"
+                    type="doughnut"
+                    palette="violet"
+                    [dataSource]="promedioData"
+                    (onPointClick)="pointClickHandler($event)">
+                    <dxo-legend
+                        [margin]="0"
+                        horizontalAlignment="center"
+                        verticalAlignment="bottom"></dxo-legend>
+                    <dxi-series        
+                        argumentField="zona"
+                        valueField="promedio">
+                      <dxo-hover-style
+                          color="#4a90e2"></dxo-hover-style>
+                </dxi-series>
+              </dx-pie-chart>
+              </div>
+            </div>
+          </div><!-- card -->
+        </div><!-- col-4 -->
+      </div><!-- row -->
+
+    </div><!-- rl-pagebody -->
+
+  </div><!-- rl-mainpanel -->

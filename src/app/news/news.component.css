@@ -1,0 +1,66 @@
+.Rectangle-2 {
+    min-height: 288px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: solid 1px #e7e7ed;
+}
+
+.card-header {
+    padding: 5%;
+}
+
+.card-header h3 {
+    width: 50%;
+    min-height: 14px;
+    color: #5c9df5;
+    font-size: 1em;
+    margin: 0px;
+    display: inline-block;
+}
+
+.card-header p {
+    width: 48%;
+    display: inline-block;
+    text-align: right;
+    min-height: 14px;
+    color: #ACABAB;
+    font-size: 0.7em;
+    margin: 0px;
+}
+
+.card-body p {
+    padding: 5%;
+    padding-top: 0px;
+}
+
+.card-body img {
+    width: 100%;;
+}
+
+.card-body p.texto {
+    padding: 5%;
+    padding-bottom: 40px;
+    font-size: 0.9em;
+    color: #8B8B8B;
+}
+
+.card-footer {
+    padding: 4%;
+    border-top: solid 1px #979797;
+}
+
+ul {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+li {
+    width: 30%;
+    display: inline-block;
+}
+
+li img {
+    width: 20%;
+}

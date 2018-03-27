@@ -1,0 +1,57 @@
+<div class="rl-sideleft">
+    <div class="tab-content">
+      <div id="mainMenu" class="tab-pane active">
+        <ul class="nav rl-sideleft-menu">
+          <li class="nav-item pd-b-7 pd-t-7 nav-item-title">
+            NAVIGATE
+          </li><!-- nav-item -->
+
+          <li class="nav-item">
+            <a routerLink="/" [ngClass]="analitycs$ | async ">
+              <img src="assets/images/analitycs@2x.png"
+               srcset="assets/images/analitycs@2x.png 2x,
+               assets/images/analitycs@3x.png 3x"
+               class="analitycs">
+              <span>Analytics</span>
+            </a>
+          </li><!-- nav-item -->
+          <li class="nav-item">
+            <a routerLink="/news" [ngClass]="news$ | async ">
+              <img src="assets/images/newspaper-o@2x.png"
+               srcset="assets/images/newspaper-o@2x.png 2x,
+               assets/images/newspaper-o@3x.png 3x"
+               class="analitycs">
+              <span>News</span>
+            </a>
+          </li><!-- nav-item -->
+          <li class="nav-item">
+            <a [ngClass]="board$ | async ">
+              <img src="assets/images/board-brief@2x.png"
+               srcset="assets/images/board-brief@2x.png 2x,
+               assets/images/board-brief@3x.png 3x"
+               class="analitycs">
+              <span>Board Brief</span>
+            </a>
+          </li><!-- nav-item -->
+          <li class="nav-item nav-item-last">
+            <a [ngClass]="briefcase$ | async ">
+              <img src="assets/images/briefcase@2x.png"
+               srcset="assets/images/briefcase@2x.png 2x,
+               assets/images/briefcase@3x.png 3x"
+               class="analitycs">
+              <span>Briefcase</span>
+            </a>
+          </li><!-- nav-item -->
+          <li class="nav-item">
+            <a id="CloseMenu" href="javascript:void(0)" class="nav-link" >
+              <img src="assets/images/angle-double-left@2x.png"
+               srcset="assets/images/angle-double-left@2x.png 2x,
+               assets/images/angle-double-left@3x.png 3x"
+               class="analitycs">
+              <span>Close Menu</span>
+            </a>
+          </li><!-- nav-item -->
+        </ul>
+      </div><!-- #mainMenu -->
+    </div><!-- tab-content -->
+  </div><!-- rl-sideleft -->
